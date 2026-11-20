@@ -1,0 +1,16 @@
+services:
+  sift:
+    build: .
+    restart: unless-stopped
+    environment:
+      PORT: "3000"
+      SIFT_DB_PATH: /data/sift.sqlite
+      SIFT_TRUST_PROXY_AUTH: "1"
+      SIFT_PUBLIC_ORIGIN: ${SIFT_PUBLIC_ORIGIN:?Set the exact HTTPS origin served by your access proxy}
+    ports:
+      - "127.0.0.1:3000:3000"
+    volumes:
+      - sift-data:/data
+
+volumes:
+  sift-data:

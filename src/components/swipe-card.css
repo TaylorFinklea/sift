@@ -1,0 +1,56 @@
+.swipe-card-stack.swipe-card-stack {
+  touch-action: pan-y;
+}
+
+.swipe-card-stack .card-stack__back {
+  border-color: rgb(89 130 160 / 18%);
+  background: linear-gradient(155deg, #121d2d, #0d1623);
+  box-shadow: 0 18px 32px rgb(0 0 0 / 20%);
+}
+
+.swipe-card-stack .card-stack__back--three { background: linear-gradient(150deg, #101a29, #0c1420); }
+.swipe-card-stack .card-stack__back--two { background: linear-gradient(150deg, #142033, #0f1927); }
+.swipe-card-stack .card-stack__back--one { background: linear-gradient(150deg, #19263a, #111c2b); }
+
+.swipe-card-stack .active-card {
+  border-color: #1c7185;
+  background: linear-gradient(148deg, #111c2a 0%, #0c1521 70%, #0b1420 100%);
+  color: #eef4fa;
+  transform: translateY(-6px) rotate(0deg);
+  box-shadow: 0 0 0 1px rgb(39 220 242 / 13%), 0 0 18px rgb(39 220 242 / 12%), 0 19px 42px rgb(0 0 0 / 48%);
+  transition: transform 220ms cubic-bezier(.2,.75,.25,1), box-shadow 220ms ease;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.swipe-card-stack .active-card__title { color: #f1f6fc; }
+.swipe-card-stack .active-card__rule { background: #37d7ec; box-shadow: 0 0 12px rgb(39 220 242 / 24%); }
+.swipe-card-stack .active-card__detail { color: #b7c5d5; }
+.swipe-card-stack .active-card__list h2 { color: #dce7f2; }
+.swipe-card-stack .active-card__list--pros h2 { color: #79e3a0; }
+.swipe-card-stack .active-card__list--cons h2 { color: #ff9aa8; }
+.swipe-card-stack .active-card__list ul { color: #c0ccda; }
+.swipe-card-stack .active-card__context { scrollbar-color: #3c6578 transparent; }
+
+.swipe-card-stack.is-dragging .active-card {
+  transition: none !important;
+  cursor: grabbing;
+}
+
+.swipe-card-stack.is-returning .active-card {
+  transition: transform 220ms cubic-bezier(.2,.75,.25,1), box-shadow 220ms ease;
+}
+
+.swipe-card-stack[data-direction="keep"] .active-card {
+  border-color: #5cef8c;
+}
+
+.swipe-card-stack[data-direction="discard"] .active-card,
+.swipe-card-stack[data-blocked="true"] .active-card {
+  border-color: #ff6476;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swipe-card-stack .active-card { transition: none; }
+}

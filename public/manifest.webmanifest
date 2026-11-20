@@ -1,0 +1,16 @@
+{
+  "id": "/",
+  "name": "Sift · Keep what matters",
+  "short_name": "Sift",
+  "description": "Sort what matters and keep trimming until the best ones rise to the top.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#080b11",
+  "theme_color": "#080b11",
+  "icons": [
+    { "src": "/assets/brand-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/brand-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/brand-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

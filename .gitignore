@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.local/
+coverage/
+*.sqlite
+*.sqlite-*
+.DS_Store
+
+# Local Cloudflare state and secret bindings
+.wrangler/
+.dev.vars*
+
+# Beads / Dolt files (added by bd init)
+.dolt/
+*.db
+.beads-credential-key
+.beads/proxieddb/

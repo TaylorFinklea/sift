@@ -1,0 +1,214 @@
+{
+  "kind": "sift-ux-b68635d-production-release",
+  "source_commit": "b68635dd9c3d2c8953f31eda8a5eaf0650b48dd1",
+  "target": {
+    "worker": "sift",
+    "domains": [
+      "sift.example.com",
+      "api.sift.example.com"
+    ],
+    "d1_binding": "DB"
+  },
+  "config_sha256": "c907feb9ca19bb773ed400e5b8c90e1b09c45c35f119d1934af1a486ad1baf61",
+  "previous_live": {
+    "deployment_id": "4b24de63-67d5-4a3f-af55-0785fccb49de",
+    "version_id": "9dddd277-df60-4b19-8fc6-5c1e6ba6c1ca",
+    "traffic_percent": 100
+  },
+  "current_live": {
+    "deployment_id": "22ad010c-fd94-4ff5-bee0-9cd162695b52",
+    "version_id": "d9887b38-1368-420e-9657-6c3b4c93cee2",
+    "traffic_percent": 100,
+    "created_on": "2026-11-09T22:09:16.407957Z"
+  },
+  "domain_and_auth_readback": {
+    "configured_custom_domains": [
+      "sift.example.com",
+      "api.sift.example.com"
+    ],
+    "workers_dev": false,
+    "preview_urls": false,
+    "main_anonymous_http": "302",
+    "asset_anonymous_http": "302",
+    "api_anonymous_http": "401",
+    "existing_provider_service_mapping_receipt": ".local/cloudflare-production/release-570c1c4.json"
+  },
+  "schema": {
+    "migration_applied": false,
+    "ledger": [
+      "0001_core.sql",
+      "0002_api_keys.sql",
+      "0003_sort_sessions.sql",
+      "0004_transfers.sql",
+      "0005_ratings.sql"
+    ],
+    "foreign_key_violations": 0
+  },
+  "data": {
+    "pre_snapshot": ".local/cloudflare-production/pre-ux-b68635d.sql",
+    "post_snapshot": ".local/cloudflare-production/post-ux-b68635d.sql",
+    "snapshot_mode": "0600",
+    "table_fingerprints_match_preflight": true,
+    "tables": {
+      "collections": {
+        "count": 1,
+        "columns": [
+          "id",
+          "name",
+          "description",
+          "keep_label",
+          "discard_label",
+          "cards_json",
+          "created_at",
+          "updated_at",
+          "numeric_fields_json"
+        ],
+        "sha256": "2a69ae8315352661963b7d201067af1cf1c90eafc2f596d78e4961a71b5ff7fa"
+      },
+      "runs": {
+        "count": 2,
+        "columns": [
+          "id",
+          "collection_id",
+          "parent_run_id",
+          "round_number",
+          "keep_limit",
+          "revision",
+          "keep_label",
+          "discard_label",
+          "cards_json",
+          "created_at",
+          "updated_at",
+          "sort_id",
+          "revises_run_id",
+          "queue_json",
+          "rating_scale_json",
+          "numeric_fields_json"
+        ],
+        "sha256": "916ef49f442c819f23e84ef9a1274a21bae0226151a91ddbcf7ebd0153bf4a04"
+      },
+      "decisions": {
+        "count": 58,
+        "columns": [
+          "id",
+          "run_id",
+          "card_id",
+          "choice",
+          "position",
+          "created_at",
+          "undone_at",
+          "replaces_decision_id"
+        ],
+        "sha256": "f82345b9915721c23dc2adbcca3f10e7200fab2ac55d476973641e059b031830"
+      },
+      "sort_sessions": {
+        "count": 2,
+        "columns": [
+          "id",
+          "collection_id",
+          "rounds_json",
+          "revision",
+          "created_at",
+          "updated_at"
+        ],
+        "sha256": "aa38ceee6b1726816e8a7f5667e418e42f4961eb24aec16583b1f133ac1b4245"
+      },
+      "api_keys": {
+        "count": 3,
+        "columns": [
+          "id",
+          "name",
+          "scope",
+          "token_digest",
+          "token_prefix",
+          "created_at",
+          "expires_at",
+          "revoked_at"
+        ],
+        "sha256": "f394d2d3815abb42e4251116f8585cb23ccf8a2630436730a6782f4d8b8a921c"
+      },
+      "sort_answers": {
+        "count": 58,
+        "columns": [
+          "id",
+          "run_id",
+          "card_id",
+          "choice",
+          "rating_value",
+          "position",
+          "created_at",
+          "undone_at",
+          "replaces_decision_id"
+        ],
+        "sha256": "4beabb12715053f3ce72511f438e908f05386984f14ebaeb65d07a7e09c085ee"
+      },
+      "transfer_records": {
+        "count": 0,
+        "columns": [
+          "collection_id",
+          "record_id",
+          "kind",
+          "version",
+          "owner_id",
+          "logical_id",
+          "payload"
+        ],
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "transfer_collection_versions": {
+        "count": 0,
+        "columns": [
+          "collection_id",
+          "transfer_bundle_id",
+          "source_revision_id",
+          "created_at"
+        ],
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      },
+      "transfer_receipts": {
+        "count": 0,
+        "columns": [
+          "digest",
+          "imported_at",
+          "summary_json"
+        ],
+        "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  },
+  "reviews": {
+    "independent_sol_release_plan_and_post_fingerprint_comparison": "passed; no material issues",
+    "deepseek_v4_1_flash_frozen_release_plan_review": "passed normal stop; no material issues"
+  },
+  "build_and_tests": {
+    "npm_test": "110/110",
+    "production_build": "passed",
+    "sites_tests": "4/4",
+    "wrangler_dry_run": "27 assets; passed"
+  },
+  "prior_release_wrapper_note": "Wrangler deploy log confirms success and the immediate deployments status confirms the new version at100%. Wrapper summary exited after Wrangler succeeded because zsh treats status as read-only; no redeploy was run.",
+  "rollback": "Worker code only to prior version 9dddd277-df60-4b19-8fc6-5c1e6ba6c1ca; retain D1 schema/data. No migration or destructive rollback.",
+  "authenticated_browser_acceptance": {
+    "js_asset": "/assets/index-BsB2V3GQ.js",
+    "viewport_widths": [
+      390,
+      1024
+    ],
+    "phone_document_width": 390,
+    "phone_scroll_width": 390,
+    "collection_icons_and_trailing_primary": "passed",
+    "rating_draft_full_width_and_responsive_bounds": "passed",
+    "draft_cancelled_without_saving": true,
+    "original_progress": "16/18 sorted,11/13 keeps retained",
+    "console_warnings_errors": [],
+    "screenshots": [
+      "/private/tmp/sift-ux-deployed-phone.png",
+      "/private/tmp/sift-ux-deployed-rating-phone.png",
+      "/private/tmp/sift-ux-deployed-rating-desktop.png"
+    ]
+  },
+  "limitations": [
+    "Detailed Access policies/domain resource mapping not freshly read with available OAuth; existing config unchanged and edge/owner behavior verified.",
+    "Physical Safari/PWA installation and representative CPU headroom remain unqualified."
+  ]
+}

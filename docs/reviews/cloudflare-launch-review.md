@@ -1,0 +1,7 @@
+# Cloudflare launch proposal review
+
+Scope: read-only provider preflight and the concrete launch plan in `docs/cloudflare-launch.md`. This is readiness for user approval, not authorization or a live deployment claim.
+
+Independent native Sol review returned ready, then re-reviewed the corrected migration sequence and explicit Worker/domain receipt capture with no material issues. Direct text-only Ollama review used the exact confirmed selector `glm-5.3-flash:cloud`, complete proposed plan/config/auth/runtime/migration context, and no tools, credentials or local database contents. The first completed review identified migration sequencing and rollback receipt gaps; both were corrected. Its certificate-cost objection was rejected against the current official Custom Domains documentation, which explicitly covers multilevel hostnames without separate ACM subscription. A completed re-review withdrew that objection, confirmed the repairs, and returned ready (`done_reason: stop`, nonempty response). Metadata and source/packet/response hashes are in `cloudflare-launch-completion.json`.
+
+After review, the user selected the already-proposed empty D1 initialization with SQLite preserved. That resolves the data preference gate without expanding the action scope. The exact reviewed source hashes and finalized plan hash are recorded separately. Live creation, Access/DNS changes, migration execution and publication still require approval of the plan. No billing upgrade, unrelated resource change, broader credential provisioning, push or SQLite import is included.

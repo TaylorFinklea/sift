@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080d15">
+  <meta name="sift-public-page" content="privacy">
+  <title>Privacy | Sift</title>
+  <style>
+    :root { color-scheme: dark; font: 16px/1.65 system-ui, sans-serif; background: #080d15; color: #e8eef7; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(100% - 2rem, 48rem); margin: 0 auto; padding: 3rem 0 5rem; }
+    a { color: #32d8ec; }
+    .brand { color: #32d8ec; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: .5rem 0 1.5rem; font-size: clamp(2.5rem, 10vw, 4rem); line-height: 1.05; }
+    h2 { margin: 2rem 0 .4rem; font-size: 1.25rem; }
+    p { color: #b3c0d1; }
+    footer { border-top: 1px solid #263445; margin-top: 3rem; padding-top: 1rem; color: #8291a5; }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="brand" href="/">Sift</a>
+    <h1>Privacy</h1>
+    <p>Effective November 9, 2026. Sift helps you organize cards and record sorting decisions. This notice describes the website and iPhone app.</p>
+
+    <h2>Website data and access</h2>
+    <p>Collections, card details, sort plans, and sort history you add on the website are stored in a Cloudflare D1 database. Access to the main website is restricted through Cloudflare Access. Cloudflare Access processes the identity used to sign in so the site can check whether access is allowed. Website and API requests pass through Cloudflare, which may process technical connection and security information to provide and protect the service.</p>
+
+    <h2>Website analytics</h2>
+    <p>The website uses Cloudflare Web Analytics, which loads a Cloudflare analytics beacon to measure page views and performance using the browser Performance API. Cloudflare states that Web Analytics does not collect or use visitors' personal data. See <a href="https://developers.cloudflare.com/web-analytics/about/">Cloudflare Web Analytics</a> and <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a> for details about Cloudflare's service and data practices.</p>
+
+    <h2>iPhone app and iCloud</h2>
+    <p>The iPhone app stores a local copy of its library on the device. When sync is enabled, Sift also uses CloudKit's private database in your iCloud account. This is separate from the website's D1 database. Apple says a private CloudKit database is accessible only to that iCloud account by default, and its data counts toward the account's iCloud storage. See <a href="https://developer.apple.com/documentation/cloudkit/ckcontainer/privateclouddatabase">Apple's CloudKit private database documentation</a> and <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Website and iPhone libraries are separate; use Sift's export and import features to transfer a library between them.</p>
+
+    <h2>Retention and removal</h2>
+    <p>Sift does not set an automatic expiration schedule for its library data or provide a user-accessible library erasure feature. Website collections and sort history are stored in the website database; the iPhone app stores a local copy and, when sync is enabled, records in the private CloudKit database. Sift currently provides no in-app deletion flow for those library records. Exported Sift files are copies saved where you choose; you manage those files separately from the library in Sift. Cloudflare and Apple process service and account information under their own policies.</p>
+
+    <h2>Use and transfer</h2>
+    <p>Library content is used to provide Sift's collection, sorting, history, and transfer features. You can export a library to a file and import it into the separate website or iPhone library. Keep exported files in a place you control.</p>
+
+    <h2>Questions</h2>
+    <p>For help and updates, see <a href="/support">Sift Support</a>. This notice may be updated as Sift's features or data practices change.</p>
+    <footer><a href="/support">Support</a></footer>
+  </main>
+</body>
+</html>

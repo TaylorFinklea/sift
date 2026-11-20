@@ -1,0 +1,32 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sift",
+  "main": "cloudflare/index.js",
+  "compatibility_date": "2026-08-06",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    { "pattern": "sift.example.com", "custom_domain": true },
+    { "pattern": "api.sift.example.com", "custom_domain": true }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "sift",
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "cloudflare/migrations"
+    }
+  ],
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "vars": {
+    "SIFT_APP_HOST": "",
+    "SIFT_API_HOST": "",
+    "SIFT_ACCESS_ISSUER": "",
+    "SIFT_ACCESS_AUD": "",
+    "SIFT_ACCESS_OWNER_EMAIL": ""
+  }
+}

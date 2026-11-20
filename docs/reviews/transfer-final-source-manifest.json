@@ -1,0 +1,232 @@
+[
+  {
+    "repository": "sift",
+    "path": "cloudflare/http.js",
+    "sha256": "ba03d03ca056a56447df8746be86e6254328bf2a534a0a2c4b42f3cafafa6f37"
+  },
+  {
+    "repository": "sift",
+    "path": "cloudflare/index.js",
+    "sha256": "8ed8511e4176c002cabe2d730ad0ef0afe00602de67f086dc95284e5f0ea115b"
+  },
+  {
+    "repository": "sift",
+    "path": "cloudflare/migrations/0004_transfers.sql",
+    "sha256": "12917d15b336d36e82da5efe9e6bc49bc023493f8ee02b2316bddda21f468111"
+  },
+  {
+    "repository": "sift",
+    "path": "server/index.js",
+    "sha256": "280243090cbef2f52544094fca4909a1d8cd7daba1c576f7a602c2ac9d1e7e23"
+  },
+  {
+    "repository": "sift",
+    "path": "shared/sort-plan.js",
+    "sha256": "b55d5cdb63cc10aef8888d1614d6ad512054eb7097fd84198d60d9fdf8cbf431"
+  },
+  {
+    "repository": "sift",
+    "path": "shared/transfer.js",
+    "sha256": "599aac15c66d8448c7f18acb28bacabd04db5016ee5923e9c86964fe7ac233ba"
+  },
+  {
+    "repository": "sift",
+    "path": "src/App.jsx",
+    "sha256": "76faa617ea14421e72aeec57b166ab2c31727dc8b64f116b646eca2cb29f2ac9"
+  },
+  {
+    "repository": "sift",
+    "path": "src/Transfer.jsx",
+    "sha256": "ffc523113d6239c890bee7f1297b9f3ddf00719653b4b0df066e3272b0acde24"
+  },
+  {
+    "repository": "sift",
+    "path": "src/api.js",
+    "sha256": "c4e91380229d4592f801cfc5180d806a5b5e2378ea85053bbb93fc10117e8acb"
+  },
+  {
+    "repository": "sift",
+    "path": "src/sort-session.js",
+    "sha256": "e4185601037398cd88448309b9d226b3805a49928ae6a9d84b2246bd7535bdd5"
+  },
+  {
+    "repository": "sift",
+    "path": "src/styles.css",
+    "sha256": "9a2d75689d35be84027b7432912fc3f7487aa3cceaa47364598ba022c15e266c"
+  },
+  {
+    "repository": "sift",
+    "path": "src/transfer-ui.js",
+    "sha256": "4ee4bea11f834ac7f8f7b8c9e6934998341dfed6dc804be4924b108e80d9d3a9"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/cloudflare.test.js",
+    "sha256": "3304e6c3390f04bbf08617b7e5c48dbaac634d9d39cf7856e39954df113f0597"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/full-history.json",
+    "sha256": "37e7c3be0e62fb1683661d22d8c6576cfed43765e22ce50fc20e058372f9b72b"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/invalid-disconnected-cycle.json",
+    "sha256": "016d91405a197b24f6cb71ce6f4d5ab4efa67503feb843fe08a6ff97fc0a82f4"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/native-concurrent.json",
+    "sha256": "d7b2e104a53abc23818f89c04d648b139e63197531d3cc391581034d70d2ec9d"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/native-multiple-leaves.json",
+    "sha256": "04b4998bd70e304b19cc0c901129bde0202f4e389e8e969d00c2ad11dc6adf26"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/web-equal-cap.json",
+    "sha256": "7e852df9fdb4e153c3cdcbe1806aef3b3fa465baadbde3a812b515b014b275f9"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/fixtures/transfer/web-generated.json",
+    "sha256": "eba0f9acf2146a9a47e3b8518128216527eb45ebd8f53625a80a5b7967826761"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/server.test.js",
+    "sha256": "17efc4d779c593820b4d740dcb7ef5075affa697b459a8819e22921f30c7ec64"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/transfer-ui.test.mjs",
+    "sha256": "d80693aa555a46f77bc4cae5a7c7fb4ef2ebf6a1ac5b6f46abfc2bd6505269b2"
+  },
+  {
+    "repository": "sift",
+    "path": "tests/transfer.test.mjs",
+    "sha256": "de514440c148daf27a452a1e95c50d7dc0495b81996fe1508fc691b98775ef54"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Config/Info.CloudDevelopment.plist",
+    "sha256": "9b8d2bd6033af69ea55ea51febaf8a23a5e587bc6c9193d25e0df180a1ca6d9b"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Config/Info.CloudProduction.plist",
+    "sha256": "d05597fe6de389085940974b20567d7c35aff5406f31a133b1349be3908381af"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Config/Info.DeviceOnly.plist",
+    "sha256": "acb73cdf50ccd87c159a435e1ebf14f8494e75eef845b79ad9cb34476f0b1c44"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Package.swift",
+    "sha256": "04fb3d5d1d8ef031211cfd5d5e4227b02cf172091402a7db6027e8b92645bbeb"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Sources/SiftCore/Replay.swift",
+    "sha256": "ae782a1abf626610fabc76c782f7ef59f2e8e66c963d04c53872587c95fd5ff2"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Sources/SiftCore/Transfer.swift",
+    "sha256": "71bafb7e78b0903292938d0547514a135ea014297311750eeaef635c3c45365f"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Sources/SiftCore/Validation.swift",
+    "sha256": "33b5a0cd51c841d5db38893809178126226ef037c83f526c13da644ea860654d"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Tests/SiftCoreTests/Fixtures/disconnected-action-cycle.sift.json",
+    "sha256": "016d91405a197b24f6cb71ce6f4d5ab4efa67503feb843fe08a6ff97fc0a82f4"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Tests/SiftCoreTests/Fixtures/full-history.sift.json",
+    "sha256": "37e7c3be0e62fb1683661d22d8c6576cfed43765e22ce50fc20e058372f9b72b"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Tests/SiftCoreTests/Fixtures/multiple-collection-leaves.sift.json",
+    "sha256": "04b4998bd70e304b19cc0c901129bde0202f4e389e8e969d00c2ad11dc6adf26"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Tests/SiftCoreTests/Fixtures/web-equal-cap.sift.json",
+    "sha256": "7e852df9fdb4e153c3cdcbe1806aef3b3fa465baadbde3a812b515b014b275f9"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Core/Tests/SiftCoreTests/SiftCoreTests.swift",
+    "sha256": "f8246db395621b89185320de2042df70b4d1e638be7effdaf48aca719f1ead4d"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/App/AppStore.swift",
+    "sha256": "0d162b9b673774c2e96b0c0eedcab53b7b899afe226605dc731d815adfcf0e33"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/App/SiftApp.swift",
+    "sha256": "86f36cd14fef5b320b5657c66eb8025977f621da3b5149607b0b2ba1d99ae84f"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/Features/Collections/CollectionEditor.swift",
+    "sha256": "416603d49bb8d96c4f833151c7274205f7417c6208a3a8605a524f60b30b659a"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/Features/Collections/CollectionsView.swift",
+    "sha256": "1356b9eaf7a95e88d33e51a3be7cbd88df1b05cdbf771d4809e472021a20bcd8"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/Features/Settings/SettingsView.swift",
+    "sha256": "726689e12a9e964aca88e0735e497de6c98a9005d838ab2b8b987d103a96d1ec"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/Persistence/LibraryTransfer.swift",
+    "sha256": "9647041480d58ee9b18efce2be3d312d8896bd650ba935ed8b60c2dc852c4950"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "Sift/Persistence/SiftTransferFile.swift",
+    "sha256": "303e5b03942bbae2f7f452985acdce89a76e945703e13778f547c41cda1035ff"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "SiftTests/AppLifecycleTests.swift",
+    "sha256": "e0a0f84d2b1f8a8641b1e75169867b765cfa2437340652a5265eb41d7aaaf849"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "SiftTests/AppStoreTests.swift",
+    "sha256": "c57b1e4796c6aa5f06f9391d0901a330565cc0acc9c576ab8d0efb2d421f9132"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "SiftTests/LocalStoreTests.swift",
+    "sha256": "356585389e74aecdbb26b710fd9045f3c361e8b29f68cc94b8591a198d078cad"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "SiftUITests/SiftOfflineFlowUITests.swift",
+    "sha256": "044505676a07ab737d4748d9e5b841528324356949343a5cd23e1075a7fe6f5a"
+  },
+  {
+    "repository": "sift-ios",
+    "path": "project.yml",
+    "sha256": "fca0f64c7f1b1866434cd099edac956fbb7d9da544f54628faaf3efcfb48c4f2"
+  }
+]

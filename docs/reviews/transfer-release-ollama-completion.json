@@ -1,0 +1,13 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "created_at": "2026-11-07T03:10:36.620276173Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 2238738401,
+  "prompt_eval_count": 5301,
+  "eval_count": 664,
+  "complete": true,
+  "packet_sha256": "f60ace4aa069406c1539dc320e000e7b336775433155260977339410300e59b1",
+  "scope": "Release config/migration/version plan only; actual artifacts/live results independently gated by Sol",
+  "raw_report": "transfer-release-ollama.md"
+}

@@ -1,0 +1,160 @@
+{
+  "model": "deepseek-v4.1-flash:cloud",
+  "packet_sha256": "2a337607a4cd6e148bdbd2adb8d8e2477277c9bb073851417da6d449b3296cfc",
+  "packet_bytes": 422090,
+  "source_manifest": [
+    {
+      "path": "~/git/sift/cloudflare/index.js",
+      "sha256": "7fb47f5ddc866f4d2ba1e5eeb25163f534756e5a2b864a4dca6d955e8cf8c0d8"
+    },
+    {
+      "path": "~/git/sift/cloudflare/security.js",
+      "sha256": "1bf55e36720d436a4a13ff36dc27e3d4e63e400d774cb702bbe151e5b284e9e6"
+    },
+    {
+      "path": "~/git/sift/cloudflare/http.js",
+      "sha256": "ba03d03ca056a56447df8746be86e6254328bf2a534a0a2c4b42f3cafafa6f37"
+    },
+    {
+      "path": "~/git/sift/public/service-worker.js",
+      "sha256": "7be0cfa7b6c9fc62260f650f87de24732f593dc5fd03739bd7e8c7d4f9162a67"
+    },
+    {
+      "path": "~/git/sift/public/privacy.html",
+      "sha256": "7aec5f5ea1ea75b43b45dd72ba601ca4550a0f5ed815fcd19ff8fd01258350c0"
+    },
+    {
+      "path": "~/git/sift/public/support.html",
+      "sha256": "8159e5391254eada62dc498007d828fa7b4d1df698de115e8c6a27c12cc2bf77"
+    },
+    {
+      "path": "~/git/sift/tests/cloudflare.test.js",
+      "sha256": "43fa087ad57d0349b48454123adc87a2001406dc1642cb7502d7c2236b52535e"
+    },
+    {
+      "path": "~/git/sift/tests/service-worker.test.mjs",
+      "sha256": "749bd10ad5bcedbb45cab39574a247269665b7e9cd90bd50a5f518b47accb7e9"
+    },
+    {
+      "path": "~/git/sift/wrangler.jsonc",
+      "sha256": "43866fe3846536de00067bda8826722d4366b7a27e3352785c07c6caeec28cfc"
+    },
+    {
+      "path": "~/git/sift/package.json",
+      "sha256": "19d7d423826cf67994b4f3e2a9f6aea5fb36866155a2359ba67950acfe43cb33"
+    },
+    {
+      "path": "~/git/sift/docs/app-store-website-access-plan.md",
+      "sha256": "71b21b3c3891d5022d24887355d7c0d0393fd8d6d5e15676e491d3aa7f08f47a"
+    },
+    {
+      "path": "~/git/sift/docs/reviews/appstore-public-pages-local.json",
+      "sha256": "16735391842fa472a1be81ed0aabe076f6c31fa8f45409714c438e17990f0ec3"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Features/Settings/SettingsView.swift",
+      "sha256": "8d1cc21e7bdf42176b39b46a6a2bc3b72b1e8d6ffe392d9903f13ffdb729b61d"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Features/Collections/CollectionEditor.swift",
+      "sha256": "c9bd3d9f68e76cdd6cea3a75e0f2fc94918ec072b1912f51fe2dddb3798c320f"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/App/AppStore.swift",
+      "sha256": "ef054cfa44e061f39255dceddacd029f8811ef874883820bd16d7665f2af1039"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Sync/PrivateCloudSync.swift",
+      "sha256": "405b125dc5ec166d67b6d9c73a761c5d74efe18a7d27b5e8ec1548d9f0d9ea5c"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Persistence/LocalStore.swift",
+      "sha256": "8e64171f1076bdb4c90c0fc5adfcd8c3b4c1ab3fc085db9490f9af377c743ab7"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Persistence/GuestLibraryAttachment.swift",
+      "sha256": "0c25d9bfce65e1468a041418c1bb321ae5ddc68d12131cc085424071a5d681e3"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Persistence/StoredRecord.swift",
+      "sha256": "27812eac2f03523dde0ed4f52c4d6d17813c7c111bc61f8ca167d3eb860ad3bb"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Persistence/LibraryTransfer.swift",
+      "sha256": "5da1689b7638c282c021a5077a7ad79742ac7e5a8e22cc4d5aa7195311d0d427"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Resources/PrivacyInfo.xcprivacy",
+      "sha256": "dc8d7e1f9a7da7f3381f30746b59206ee62ce225b69fe3bcbb66234f8459be35"
+    },
+    {
+      "path": "~/git/sift-ios/SiftUITests/SiftOfflineFlowUITests.swift",
+      "sha256": "fe8197cef394ac92ba6d72de04d0ca18b4a5c229fafe843a73145420ab390e68"
+    },
+    {
+      "path": "~/git/sift-ios/Core/Package.swift",
+      "sha256": "04fb3d5d1d8ef031211cfd5d5e4227b02cf172091402a7db6027e8b92645bbeb"
+    },
+    {
+      "path": "~/git/sift-ios/project.yml",
+      "sha256": "a20207d19f2ef6c39951966378955ae57ff8696550a12b81f9389c79309430b7"
+    },
+    {
+      "path": "~/git/sift-ios/Config/Info.CloudProduction.plist",
+      "sha256": "d05597fe6de389085940974b20567d7c35aff5406f31a133b1349be3908381af"
+    },
+    {
+      "path": "~/git/sift-ios/Config/Sift.CloudKitProduction.entitlements",
+      "sha256": "73f316386b338ca27fb9a38eb55cea3431aa5cb068414bb00f7d82dde8ddf025"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/app-store/README.md",
+      "sha256": "e415dc6d2841d0508a3d47a37019f9057c2407c8024feba747e9f82d091ee0aa"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/app-store/privacy-data-map.md",
+      "sha256": "2ff736e9e1d28740e39d058ef9d9dc22d6e981a4915529cf0fa04227935097b3"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/app-store/listing-draft.md",
+      "sha256": "81b2ff32dd6a034e4254b3ebebbe0fa5510adce2b1a557a793a282ff0f454455"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/app-store/review-checklist.md",
+      "sha256": "f4d23615afe523241de58cb674e516629908f795c7ca3c546a7439019bd5772e"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/ai/decisions.md",
+      "sha256": "91d2422c292ab5f2443241bdbcef096fdb0840068605e8185e07bfb90b24cd3f"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/ai/roadmap.md",
+      "sha256": "28a65c6a355e213665ee8228e8b71ca1d995b799e45245fe09f7e6a873ab293a"
+    },
+    {
+      "path": "/private/tmp/sift-appstore-manual-release-plan.json",
+      "sha256": "06c205787f3e0d5275a642cc2a43c93a008b28ca0cd6a5d9a9cf639a82350ea5"
+    },
+    {
+      "path": "/private/tmp/sift-appstore-manual-release.py",
+      "sha256": "901566408ff78974aa66567977f3a1fba4b6b91e18019e14b8d18b5500fe706f"
+    },
+    {
+      "path": "/private/tmp/SiftEditorSolDiagnosis.json",
+      "sha256": "d1496520bfb51631ae5f6b60c23e2f45a6b78cc261f1cf083037162ca7d248f9"
+    },
+    {
+      "path": "/private/tmp/SiftEditorSolPass-summary.json",
+      "sha256": "fd9b9e57b0021d2301f36ac8338228fd480c24476aa2f1957dd6d262fd573eb8"
+    }
+  ],
+  "attempts": 1,
+  "complete": true,
+  "done": true,
+  "done_reason": "stop",
+  "error": null,
+  "unresolved_tool_calls": false,
+  "elapsed_seconds": 2.78,
+  "report_sha256": "8bada286be2734d4fde1ef64a5bbbc5214729ddd8e9757344ad072870b663461",
+  "boundary": "Reviewed current local public-route/native link/test/draft preparation plus exact manual-release option only. Public page deployment, finalized data-removal/contact and future optional-IAP implementation require resolved inputs and relevant delta verification; no App Review submission or public release."
+}

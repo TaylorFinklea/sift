@@ -1,0 +1,78 @@
+[
+  {
+    "path": "cloudflare/index.js",
+    "sha256": "241e51a0ffe2ec55f4861a85d0dd10d6d3065992a0c51d333e9edf78c665e795"
+  },
+  {
+    "path": "cloudflare/migrations/0005_ratings.sql",
+    "sha256": "183db2ff6f5eada32a27e6ddb5c5613484eeb6c223e7a09338e27d930737c199"
+  },
+  {
+    "path": "server/index.js",
+    "sha256": "398a6524c9e097cf7db211632acfa43b4087a1f549bdba7dc2dc00f974c42e3a"
+  },
+  {
+    "path": "shared/numeric-scale.js",
+    "sha256": "8b82f2fda3939f2a00f7130ed065fb4a10b974932a8d1d91ca5bfd66b116399a"
+  },
+  {
+    "path": "shared/sort-plan.js",
+    "sha256": "13be5d925102e9d0a5b86a2e1023c904133f1b30d35e405208a6e70db6d5aee5"
+  },
+  {
+    "path": "shared/transfer.js",
+    "sha256": "de1ea59fe3b22e1d2aaa8dc9d929ac5d91e0672fb4ea6dd26a375a4583f2716d"
+  },
+  {
+    "path": "src/App.jsx",
+    "sha256": "9114f578048a52c620ae2120d4de6a8ffdc04d7fbbf89bd66fbab6e29563daf9"
+  },
+  {
+    "path": "src/api.js",
+    "sha256": "6c7500d46f43e318bafa2981636610fbc9b82f1cd4c792997c067b6355f3b321"
+  },
+  {
+    "path": "src/card-editor.js",
+    "sha256": "74f4b5d678a58bd2a58e449e453ac1da75635c09755f6f5b74b6a32e79f7fc0b"
+  },
+  {
+    "path": "src/sort-keyboard.js",
+    "sha256": "cb0f7232f9333e15a9c640aa56c141760809d2ed7e00f9668f0b7c7233354751"
+  },
+  {
+    "path": "src/sort-session.js",
+    "sha256": "586ba669ea782a0cbdd43dfd35a1a06b26f8462bfc3204245b65d96acc2c7fd8"
+  },
+  {
+    "path": "src/styles.css",
+    "sha256": "622ea1d645c8f3a1a42995cc37c212c5bd9d6845f7b0690856f5a6a2a7271336"
+  },
+  {
+    "path": "tests/card-editor.test.js",
+    "sha256": "73b41c7d2a90cd6dfbaa78f90d60d4b8f21ce2f787110f1b303332a0e742d1d4"
+  },
+  {
+    "path": "tests/cloudflare.test.js",
+    "sha256": "b45a631de32721e0d718ef465debdc2c02b8f5fe6dd6ebf6c72a9256e59a087e"
+  },
+  {
+    "path": "tests/server.test.js",
+    "sha256": "fba07895b08103b2e4d4ef644dfe4aa53fafb11ce26455d70b9189b46b2a15b6"
+  },
+  {
+    "path": "tests/sort-keyboard.test.mjs",
+    "sha256": "ccd765ba9f70adfa03d7cc18bd1ca77e2cb7238d7759a90484757c2b5815679d"
+  },
+  {
+    "path": "tests/sort-session.test.mjs",
+    "sha256": "3d9af921bd469e78b06205a8f18865671202697f9992d7bcb34e84e1d670401c"
+  },
+  {
+    "path": "tests/transfer-ui.test.mjs",
+    "sha256": "b2a3ffb17fbd98cfc999e503a0d4341f7fb17dd2b8eecef66d830396f80d3719"
+  },
+  {
+    "path": "tests/transfer.test.mjs",
+    "sha256": "64088874630df76a13fbea9c39b8bfb6f069d3d4301a8b02cc9c91ad5e19f1c4"
+  }
+]

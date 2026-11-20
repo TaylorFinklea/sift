@@ -1,0 +1,42 @@
+{
+  "complete": true,
+  "model": "deepseek-v4.1-flash:cloud",
+  "done_reason": "stop",
+  "packet_sha256": "d2d260029828accd32de80214458ebbec5e3c69f012b704f39b7ef29d4e658cd",
+  "packet_bytes": 25276,
+  "source_files": 8,
+  "reviewed_sources": [
+    {
+      "path": "~/git/sift/.local/cloudflare-production/ratings-release-plan-20261109.json",
+      "sha256": "fb185c5c074e7a033b18fa037ba497a0ed72fd916953e20df9633e3dcd5544d6"
+    },
+    {
+      "path": "~/git/sift/cloudflare/migrations/0005_ratings.sql",
+      "sha256": "183db2ff6f5eada32a27e6ddb5c5613484eeb6c223e7a09338e27d930737c199"
+    },
+    {
+      "path": "~/git/sift/docs/ratings-contract.md",
+      "sha256": "81d8a892d1179e00a5a40245a496af9d4eb145bfab616c7c89f15589c83e7ceb"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/reviews/ratings-testflight-preflight.md",
+      "sha256": "14588eeca6b0edf43efcf06b208e488be7d8f01da6f47e71fbdcf571d1135577"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/reviews/ratings-testflight-preflight.json",
+      "sha256": "7535527b673461d660950b82615e4edccb7b7fd7a94a4dbaf8023b5005da4f76"
+    },
+    {
+      "path": "~/git/sift-ios/Config/TestFlight.xcconfig",
+      "sha256": "a773bbbbae2637c30699ef31c0a9e6f869bf6f504a039742d04a9e728c5b4735"
+    },
+    {
+      "path": "~/git/sift-ios/Config/ExportOptions.TestFlight.plist",
+      "sha256": "e5e1b9cff6668ac56d50037e3a8e7cc059f40ef22f152b236c9359b8c6c21770"
+    },
+    {
+      "path": "~/git/sift-ios/Config/Sift.CloudKitProduction.entitlements",
+      "sha256": "73f316386b338ca27fb9a38eb55cea3431aa5cb068414bb00f7d82dde8ddf025"
+    }
+  ]
+}

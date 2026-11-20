@@ -1,0 +1,150 @@
+{
+  "kind": "sift-transfer-production-release",
+  "source_commit": "07ff46cb96422aa6232327bb81994bb38aaefc24",
+  "target": {
+    "account_id": "<redacted-account-id>",
+    "worker": "sift",
+    "d1_id": "<redacted-d1-id>",
+    "d1_binding": "DB"
+  },
+  "config": {
+    "path": ".local/cloudflare-production/wrangler.jsonc",
+    "sha256": "c907feb9ca19bb773ed400e5b8c90e1b09c45c35f119d1934af1a486ad1baf61"
+  },
+  "migration": {
+    "applied_only": "0004_transfers.sql",
+    "exit_code": 0,
+    "pending_after": [],
+    "recorded_in_ledger": true,
+    "foreign_key_violations": 0,
+    "transfer_tables_empty": {
+      "transfer_collection_versions": 0,
+      "transfer_receipts": 0,
+      "transfer_records": 0
+    }
+  },
+  "deployment": {
+    "exit_code": 0,
+    "deployment_id": "b471672c-10b5-4f6f-9cef-a6ffe817e304",
+    "version_id": "fd7bae7e-2ffb-4277-b314-ae08c8e600e6",
+    "created_on": "2026-11-07T03:16:35.031479Z",
+    "traffic_percent": 100,
+    "code_rollback_target_version_id": "2d722aad-786a-4833-b4fb-b0d8e35a9697"
+  },
+  "previous_active_version_id": "2d722aad-786a-4833-b4fb-b0d8e35a9697",
+  "domains": [
+    {
+      "hostname": "sift.example.com",
+      "id": "<redacted-domain-binding-id>",
+      "zone_id": "<redacted-zone-id>"
+    },
+    {
+      "hostname": "api.sift.example.com",
+      "id": "<redacted-domain-binding-id>",
+      "zone_id": "<redacted-zone-id>"
+    }
+  ],
+  "exposure_flags": {
+    "workers_dev_enabled": false,
+    "preview_urls_enabled": false,
+    "unchanged_from_prior_receipt": true
+  },
+  "preexisting_app_table_fingerprints_unchanged": {
+    "api_keys": {
+      "count": 3,
+      "sha256": "0c433c82163d9211d37a042b4f8a1c5fb2f1d18e22656016a397c2e4a6ac684c"
+    },
+    "collections": {
+      "count": 1,
+      "sha256": "99cb5903128f47c7dcbbf1a3202d9f61ce77418aaabfba96a81305dc89c344b5"
+    },
+    "decisions": {
+      "count": 58,
+      "sha256": "e50bb9ad19ea5e06ec97abb0b53fb53d2223adbedae6e1a28ef0b0b6a2948248"
+    },
+    "runs": {
+      "count": 2,
+      "sha256": "023c66b8491eee082ff90c8d39d78162148257fa5c4ff356f32f99a1897c78c5"
+    },
+    "sort_sessions": {
+      "count": 2,
+      "sha256": "a75b56645145c789a407f2e5ca15cc559d62ec667b858ccba582a274761ca70b"
+    }
+  },
+  "auth_smoke": {
+    "main_anonymous_status": 302,
+    "api_anonymous_status": 401,
+    "api_json_error": "api_key_invalid"
+  },
+  "checks": {
+    "npm_run_build": "passed",
+    "npm_run_test_sites": "passed 4/4",
+    "worker_test_suite": "14/15 first run; single race test failed once with Body is unusable, focused retry passed 1/1",
+    "wrangler_dry_run": "normal completion marker; 27 assets, 158.34 KiB / 37.14 KiB gzip, no errors; numeric exit code not captured"
+  },
+  "artifacts": {
+    "pre_migration_backup": {
+      "path": ".local/cloudflare-production/pre-0004-20261106T030726Z.sql",
+      "mode": "0o600",
+      "bytes": 28991,
+      "sha256": "a8b93d6c1846410c36d812aa63ad32705ab72d776167f2af29df47f40aea8bdd",
+      "created_at_utc": "2026-11-07T03:07:29.633038+00:00"
+    },
+    "post_migration_backup": {
+      "path": ".local/cloudflare-production/post-0004-07ff46c-20261107T031743Z.sql",
+      "mode": "0o600",
+      "bytes": 29848,
+      "sha256": "62808bdaa2475261b0b3b6c504b83a9008fe8a1b6da0ba47991bd3cf6061bfee",
+      "created_at_utc": "2026-11-07T03:17:46.336595+00:00"
+    },
+    "migration_log": {
+      "path": ".local/cloudflare-production/migration-0004-20261107T031612Z.log",
+      "mode": "0o600",
+      "bytes": 1257,
+      "sha256": "95956c1c247f9f29a0962529b7dc28024cb75cbd36ebf9f9d3269dbe51d9bebf",
+      "created_at_utc": "2026-11-07T03:16:15.596095+00:00"
+    },
+    "deployment_log": {
+      "path": ".local/cloudflare-production/deploy-07ff46c-20261107T031629Z.log",
+      "mode": "0o600",
+      "bytes": 1562,
+      "sha256": "458dc38a0aadfe80153896fe6a58d4e609d239a3c7004f0c12408082a6718b7a",
+      "created_at_utc": "2026-11-07T03:16:37.526598+00:00"
+    },
+    "post_export_log": {
+      "path": ".local/cloudflare-production/post-0004-export-20261107T031743Z.log",
+      "mode": "0o600",
+      "bytes": 1276,
+      "sha256": "b8018dc753205263f51c30372dd5ea55dae980df03f1e5746ef3644abe8dd5ec",
+      "created_at_utc": "2026-11-07T03:17:46.336901+00:00"
+    },
+    "dry_run_log": {
+      "path": ".local/cloudflare-production/wrangler-dry-run-20261106T030926Z.log",
+      "mode": "0o600",
+      "bytes": 1192,
+      "sha256": "58d872312bed02d94f4a80e33312ffe0ad9c9ed1c14f34ab2326768c7c81a9c2",
+      "created_at_utc": "2026-11-07T03:09:28.741939+00:00"
+    }
+  },
+  "production_content_or_api_key_fixture_writes": false,
+  "dns_access_billing_or_local_sqlite_changes": false,
+  "private_receipt_sha256": "e59ad56297458cf4dca89def783bd734871013ab8e1c41d2652c8d4d91edac33",
+  "owner_browser_acceptance": {
+    "bundle": "/assets/index-DL6nZ1ni.js",
+    "focusProgress": "16 of 18 sorted;11 of13 keeps;unchanged",
+    "transferControlsVisible": true,
+    "exportSucceeded": true,
+    "consoleWarningsOrErrors": 0,
+    "screenshot": "/private/tmp/sift-transfer-live.png",
+    "productionImportPerformed": false
+  },
+  "native_export_validation": {
+    "filename": "sift-library.sift.json",
+    "bytes": 78720,
+    "sha256": "d9a8c3177aba6705f3cb7d5f1143a18c6d32ce682bfae993c7b9c1d2e64f6d21",
+    "collections": 1,
+    "records": 105,
+    "swiftCodecReplayTest": "1/1 passed",
+    "cloudOrDeviceImportPerformed": false
+  }
+}

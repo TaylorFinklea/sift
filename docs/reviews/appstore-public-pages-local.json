@@ -1,0 +1,100 @@
+{
+  "schema": "sift.local-verification.v1",
+  "scope": "App Store privacy and support public pages",
+  "readiness": "local-verified; not deployment-ready",
+  "snapshot": {
+    "repository": "~/git/sift",
+    "base_commit": "93ed107b021c43be317d35ce3306585a07779fa1",
+    "code_commit": null,
+    "state": "uncommitted worktree snapshot; source frozen after this receipt",
+    "lead_owned_dirty_files_preserved": [
+      ".beads/interactions.jsonl",
+      ".docs/ai/current-state.md"
+    ],
+    "sha256": {
+      "cloudflare/index.js": "7fb47f5ddc866f4d2ba1e5eeb25163f534756e5a2b864a4dca6d955e8cf8c0d8",
+      "public/privacy.html": "7aec5f5ea1ea75b43b45dd72ba601ca4550a0f5ed815fcd19ff8fd01258350c0",
+      "public/support.html": "8159e5391254eada62dc498007d828fa7b4d1df698de115e8c6a27c12cc2bf77",
+      "public/service-worker.js": "7be0cfa7b6c9fc62260f650f87de24732f593dc5fd03739bd7e8c7d4f9162a67",
+      "tests/cloudflare.test.js": "43fa087ad57d0349b48454123adc87a2001406dc1642cb7502d7c2236b52535e",
+      "tests/service-worker.test.mjs": "749bd10ad5bcedbb45cab39574a247269665b7e9cd90bd50a5f518b47accb7e9",
+      "docs/app-store-website-access-plan.md": "71b21b3c3891d5022d24887355d7c0d0393fd8d6d5e15676e491d3aa7f08f47a",
+      "dist/client/privacy.html": "7aec5f5ea1ea75b43b45dd72ba601ca4550a0f5ed815fcd19ff8fd01258350c0",
+      "dist/client/support.html": "8159e5391254eada62dc498007d828fa7b4d1df698de115e8c6a27c12cc2bf77"
+    }
+  },
+  "verification": {
+    "build": {
+      "command": "npm run build",
+      "result": "passed",
+      "vite_modules_transformed": 4590,
+      "artifacts": [
+        "dist/client/index.html",
+        "dist/client/privacy.html",
+        "dist/client/support.html",
+        "dist/client/service-worker.js",
+        "dist/server/index.js",
+        "dist/.openai/hosting.json"
+      ],
+      "bundle_sizes": {
+        "client_js_reported": "341.72 kB",
+        "client_css_reported": "65.29 kB"
+      }
+    },
+    "tests": {
+      "command": "node --test tests/cloudflare.test.js tests/service-worker.test.mjs",
+      "result": "passed",
+      "passed": 21,
+      "failed": 0,
+      "suites": {
+        "tests/cloudflare.test.js": { "passed": 19, "failed": 0 },
+        "tests/service-worker.test.mjs": { "passed": 2, "failed": 0 }
+      }
+    },
+    "wrangler_static_assets": {
+      "command": "npm run dev:worker",
+      "wrangler_version": "4.156.0",
+      "worker_session_id": 61461,
+      "worker_origin": "https://localhost:8787",
+      "qa_proxy_session_id": 33657,
+      "qa_proxy_origin": "http://127.0.0.1:3995",
+      "qa_proxy_scope": "loopback only; exact /privacy and /support GET/HEAD; forces Host sift.example.com; strips Authorization and Cookie",
+      "checks": {
+        "GET /privacy": "200; canonical ASSETS route; no Location header; privacy marker and CSP present",
+        "GET /support": "200; canonical ASSETS route; no Location header; support marker and CSP present",
+        "HEAD /privacy": "200; no response body",
+        "HEAD /support": "200; no response body",
+        "missing_page_marker_or_private_shell_fallback": "404 no-store",
+        "GET /": "503 from local Worker because local Access JWT configuration is intentionally unset; route remained protected",
+        "GET /assets/brand-mark.png": "503 from local Worker because local Access JWT configuration is intentionally unset; route remained protected",
+        "GET /privacy/ and /privacy.html": "503 from local Worker because local Access JWT configuration is intentionally unset; noncanonical routes remained protected"
+      }
+    },
+    "browser_qa": {
+      "performed_by": "lead",
+      "result": "accepted",
+      "viewports": [
+        { "page": "privacy", "width": 320, "height": 568, "capture": "/tmp/sift-appstore-privacy-320.png", "sha256": "638882b406ea971d736e9f302c61a724ed34f277f71c68bf0dac334034e2677f" },
+        { "page": "support", "width": 390, "height": 844, "capture": "/tmp/sift-appstore-support-390.png", "sha256": "c893f1823fc3c8dbbd2cfc30d8aaaa788952c32fdc999f039633495c6ab26b71" },
+        { "page": "privacy", "width": 1024, "height": 768, "capture": "/tmp/sift-appstore-privacy-desktop-accepted.png", "sha256": "3b29633d85f16f37f5e50cb1956d7ebe8528917d525fb85b74d775c81e387c54", "main_width": 768, "document_scroll_width": 1024 }
+      ],
+      "keyboard_privacy_support_navigation": "passed",
+      "console_warnings": [],
+      "console_errors": [],
+      "earlier_distorted_captures": "rejected; not acceptance evidence"
+    }
+  },
+  "review_and_release_gates": {
+    "support_contact": "not supplied; support page is self-help only",
+    "cloudflare_admin_login": "not available for Access configuration",
+    "public_access_policy": "not changed; exact /privacy and /support destination overrides remain pending review and separate authorization",
+    "deployment": "not performed",
+    "app_store_submission": "not performed",
+    "monetization": "no ads or paid tier confirmed; optional in-app tip purchase is under consideration and not implemented"
+  },
+  "external_references": [
+    "https://developers.cloudflare.com/api/resources/zero_trust/subresources/access/applications/methods/get/",
+    "https://developers.cloudflare.com/web-analytics/about/",
+    "https://developer.apple.com/documentation/cloudkit/ckcontainer/privateclouddatabase"
+  ]
+}

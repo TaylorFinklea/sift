@@ -1,0 +1,46 @@
+[
+  {
+    "path": "server/index.js",
+    "sha256": "f25b4381aaacbc83a301cc03fec803032408fe7270a1bdcc861f41b2c695fd22"
+  },
+  {
+    "path": "src/App.jsx",
+    "sha256": "6ca1b8b321fdff29d5e83be2bad5ee71c512cdb9f382d69b73018f067f075c62"
+  },
+  {
+    "path": "src/api.js",
+    "sha256": "c823b51b11f42063ecefe4032a59c600e79e9bd236ac17502a7af5c5c6d80009"
+  },
+  {
+    "path": "src/collection-context.js",
+    "sha256": "535cf912ff888b4dd4064d2d18f9af09eaf37cbbf198f23b444c24e8ac2ec0b6"
+  },
+  {
+    "path": "src/sort-keyboard.js",
+    "sha256": "76ea2d05561c31bb0d757f368e220f5fccf9894ef9e6daf3b2d8a3863705a881"
+  },
+  {
+    "path": "public/service-worker.js",
+    "sha256": "d02cbc19ef8658e6f8949c649e5f406948f149d03ffc629457c0d1e260d4a91d"
+  },
+  {
+    "path": "vite.config.mjs",
+    "sha256": "8d4e5eef0de65ad2cb5494805924e3876b4b497609e9a083b2fdb524bea878a7"
+  },
+  {
+    "path": "Dockerfile",
+    "sha256": "dc089918b0ef8e377a7dd0dc48671e6ef536da89cd244a7efd02d82e25100061"
+  },
+  {
+    "path": "compose.yaml",
+    "sha256": "7a7266870f2cc694bb5de8c151eb7b476708ae886870e2f0286364b0aeaa47c7"
+  },
+  {
+    "path": "package.json",
+    "sha256": "192ac9cfb2d6d45f1aedda1bb3a49e43ffaab05db9470f58101270f3b1efe1c7"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "f04668d0b2e5ed0fff1473a23b845b9623d0a05f391066b6e35a2d5d33f119dc"
+  }
+]

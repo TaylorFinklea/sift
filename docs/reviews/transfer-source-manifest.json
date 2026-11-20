@@ -1,0 +1,70 @@
+[
+  {
+    "path": "~/git/sift/shared/transfer.js",
+    "sha256": "599aac15c66d8448c7f18acb28bacabd04db5016ee5923e9c86964fe7ac233ba"
+  },
+  {
+    "path": "~/git/sift/cloudflare/index.js",
+    "sha256": "ab60c7cad34c24a41eb98d53a639874201c21aa7fd5dcd44224a50fcab0094f2"
+  },
+  {
+    "path": "~/git/sift/cloudflare/http.js",
+    "sha256": "ba03d03ca056a56447df8746be86e6254328bf2a534a0a2c4b42f3cafafa6f37"
+  },
+  {
+    "path": "~/git/sift/server/index.js",
+    "sha256": "b53148b092b3f86f1c8d03785f58f9b43c2240387b50f132445611e0f5d53f27"
+  },
+  {
+    "path": "~/git/sift/server/index.js",
+    "sha256": "b53148b092b3f86f1c8d03785f58f9b43c2240387b50f132445611e0f5d53f27"
+  },
+  {
+    "path": "~/git/sift/cloudflare/migrations/0004_transfers.sql",
+    "sha256": "12917d15b336d36e82da5efe9e6bc49bc023493f8ee02b2316bddda21f468111"
+  },
+  {
+    "path": "~/git/sift/docs/transfer-format.md",
+    "sha256": "67828c21819bdeb13433712ddcc89a199ae46b0c13303312b084a7bbca4269ee"
+  },
+  {
+    "path": "~/git/sift-ios/Core/Sources/SiftCore/Models.swift",
+    "sha256": "b6ee93742dc8aff1e9c286983c6188289637d11163253288452373de5548b2ec"
+  },
+  {
+    "path": "~/git/sift-ios/Core/Sources/SiftCore/Validation.swift",
+    "sha256": "33b5a0cd51c841d5db38893809178126226ef037c83f526c13da644ea860654d"
+  },
+  {
+    "path": "~/git/sift-ios/Core/Sources/SiftCore/Transfer.swift",
+    "sha256": "71bafb7e78b0903292938d0547514a135ea014297311750eeaef635c3c45365f"
+  },
+  {
+    "path": "~/git/sift-ios/Core/Sources/SiftCore/Replay.swift",
+    "sha256": "ae782a1abf626610fabc76c782f7ef59f2e8e66c963d04c53872587c95fd5ff2"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/Persistence/LibraryTransfer.swift",
+    "sha256": "9647041480d58ee9b18efce2be3d312d8896bd650ba935ed8b60c2dc852c4950"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/Persistence/SiftTransferFile.swift",
+    "sha256": "303e5b03942bbae2f7f452985acdce89a76e945703e13778f547c41cda1035ff"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/Persistence/LocalStore.swift",
+    "sha256": "8e64171f1076bdb4c90c0fc5adfcd8c3b4c1ab3fc085db9490f9af377c743ab7"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/App/AppStore.swift",
+    "sha256": "0d162b9b673774c2e96b0c0eedcab53b7b899afe226605dc731d815adfcf0e33"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/App/SiftApp.swift",
+    "sha256": "86f36cd14fef5b320b5657c66eb8025977f621da3b5149607b0b2ba1d99ae84f"
+  },
+  {
+    "path": "~/git/sift-ios/Sift/Features/Settings/SettingsView.swift",
+    "sha256": "6e9c1d44675828f478fc04c6f8e66b5b4f23aea095b074a431f6936fb21d8d68"
+  }
+]

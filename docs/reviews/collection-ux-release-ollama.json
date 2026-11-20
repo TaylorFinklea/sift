@@ -1,0 +1,104 @@
+{
+  "complete": true,
+  "model": "deepseek-v4.1-flash:cloud",
+  "done": true,
+  "done_reason": "stop",
+  "error": null,
+  "unresolved_tool_calls": false,
+  "elapsed_seconds": 16.3,
+  "packet_sha256": "efe9159cc1fc0916c09fd9c06285fdff9d672be5837bef94b57b88491372c32b",
+  "packet_bytes": 299416,
+  "source_manifest": [
+    {
+      "path": "~/git/sift/.local/cloudflare-production/ux-release-plan-b68635d.json",
+      "sha256": "d9ceec6478488fb0cc2d59847dbef5d890f5fb3e63a30608303cb093604056e3"
+    },
+    {
+      "path": "~/git/sift/.local/cloudflare-production/preflight-ux-b68635d.json",
+      "sha256": "4fbdef4c040226d0adb784493ae54a0a66e7cb8f5fde5f9672113030ee42fecf"
+    },
+    {
+      "path": "~/git/sift/.local/cloudflare-production/ux-prep-receipts-b68635d.json",
+      "sha256": "86e764534d88331db0d7f2e327a5dca33acade8210e5df2720cd7fda11a5a114"
+    },
+    {
+      "path": "~/git/sift/AGENTS.md",
+      "sha256": "27109588ec9b1374d775678016a9b0090b195ed77dff584b38ed0a5238eaf607"
+    },
+    {
+      "path": "~/git/sift/package.json",
+      "sha256": "19d7d423826cf67994b4f3e2a9f6aea5fb36866155a2359ba67950acfe43cb33"
+    },
+    {
+      "path": "~/git/sift/src/App.jsx",
+      "sha256": "80aa64b3fcf0d9d028b9fde65c02c1726e87206e8022df186fd65f0ae835288f"
+    },
+    {
+      "path": "~/git/sift/src/Transfer.jsx",
+      "sha256": "6368bc2ca6d64dc5a7be93242ec9719911da7b7d1ac8d88b2ecd7291408cdd4b"
+    },
+    {
+      "path": "~/git/sift/src/styles.css",
+      "sha256": "d2403a44e38970c83ad80e3b54fd2c075d9c55088654efdc78c9b4b51d341f25"
+    },
+    {
+      "path": "~/git/sift/cloudflare/index.js",
+      "sha256": "241e51a0ffe2ec55f4861a85d0dd10d6d3065992a0c51d333e9edf78c665e795"
+    },
+    {
+      "path": "~/git/sift-ios/AGENTS.md",
+      "sha256": "a4fef4336a9c47bf2a59de38ce2bb9bfcaf866bf1136255dc96a6d00fa826a4b"
+    },
+    {
+      "path": "~/git/sift-ios/.docs/reviews/testflight-build4-preflight.md",
+      "sha256": "2142dbf6e3832226663494a83161dcf0cc225553bca3bfbdbe5ff469f2ff6263"
+    },
+    {
+      "path": "/private/tmp/sift-testflight-build4-preupload-state.json",
+      "sha256": "6e2151a1af5797d824bc0ea09b65fed75bff164c372b44390e92c718bcd5d49d"
+    },
+    {
+      "path": "/private/tmp/sift-testflight-build4-group-preupload.json",
+      "sha256": "289bce5e21ae0109ccdfe263d9acfaab633cae0c9bf0f86f08224349ead585e1"
+    },
+    {
+      "path": "/private/tmp/sift-ios-build4-validation-result.json",
+      "sha256": "7f49cd1f6c55377645bbdf2884b3a2775bd70746f657d7eac517a097cb260a34"
+    },
+    {
+      "path": "/private/tmp/sift-ios-build4-apple-validation.log",
+      "sha256": "dba2d45c252fa41260ed31e717924075cfad6c61fffbf78e72a4ba9be7f327cc"
+    },
+    {
+      "path": "/private/tmp/sift-validate-build4.py",
+      "sha256": "8e1a22e39ed490594dfa8a3e3f078af4c0ec58c759d0a7afad424904c1e48fa7"
+    },
+    {
+      "path": "/private/tmp/sift-upload-build4.py",
+      "sha256": "5820c225415c00294c47768cfdbafe30f8af79b544feea88d2353d30fc104c2d"
+    },
+    {
+      "path": "/private/tmp/sift-assign-build4.py",
+      "sha256": "df6d39ffc67cca4c852593af20c31bda45f5b0efcddf0a5eec9636a065bad453"
+    },
+    {
+      "path": "~/git/sift-ios/Config/TestFlight.xcconfig",
+      "sha256": "fc52f65ad567bbadd9a26b9a6eb86779771fa9874c1b48cc47a17c38f628111b"
+    },
+    {
+      "path": "~/git/sift-ios/Config/ExportOptions.TestFlight.plist",
+      "sha256": "e5e1b9cff6668ac56d50037e3a8e7cc059f40ef22f152b236c9359b8c6c21770"
+    },
+    {
+      "path": "~/git/sift-ios/Config/Sift.CloudKitProduction.entitlements",
+      "sha256": "73f316386b338ca27fb9a38eb55cea3431aa5cb068414bb00f7d82dde8ddf025"
+    },
+    {
+      "path": "~/git/sift-ios/Sift/Features/Collections/CollectionsView.swift",
+      "sha256": "b2a5ba5128ca9f36ee9b46d79e0f920f4c030667d47257cc99ed328d16300dba"
+    }
+  ],
+  "additional_context": "Full web/native feature diffs and native version-only diff were included with release requirements and actual evidence qualification.",
+  "report": "No material findings.\n\nThe scoped web redeploy and private internal TestFlight build 4 update are release-safe as presented, subject to the stated contingent actions: one guarded upload, one guarded deploy, and successful postchecks/readback. I found no actionable release-safety, correctness, scope, or evidence defect that should block the lead gate.\n\nKey evidence reviewed:\n- Web scope is presentation-only: `src/App.jsx`, `src/Transfer.jsx`, `src/styles.css`; no API/worker logic change in the feature diff. `cloudflare/index.js` hash is pinned and unchanged by the feature diff.\n- Web preflight pins source `b68635d`, config hash `c907feb9\u2026`, live rollback version `9dddd277\u2026` at 100%, no migration, and nine-table D1 fingerprint comparison. Independent Sol hash match and in-memory D1 restore match are stated.\n- Web checks: `npm test` 110/110, build, Sites 4/4, Wrangler dry-run passed. Remaining actions are deploy once and postchecks.\n- Native scope is version-only production 3\u21924 plus collection-row presentation and focused UI tests. IPA SHA `6ea6fce7\u2026` is pinned; Info.plist 1.0(4), minimum iOS 26, production entitlements, Distribution re-sign, and codesign verification are stated.\n- Apple validate-only official log says `VERIFY SUCCEEDED with no errors` for the exact pinned IPA. The missing numeric `altool` exit code is correctly qualified and not claimed as observed 0.\n- Upload/assignment guards pin gate, IPA hash, validation receipt, exact altool path, Keychain-derived API identifiers, one-time `O_EXCL` logs, unique VALID build 4, unchanged tester hash/group restrictions, and readback. No private key in argv/output.\n- Unresolved `sift-ios-1ee` editor TextView failure is correctly treated as an unresolved limitation, not a regression or full-suite pass.\n- No new DNS, Access, billing, database migration/content writes, CloudKit schema/accounts, public testing, device install, or Git push are in scope.\n\nResidual limitations are already disclosed and do not require additional mandatory work for this scoped release: fresh detailed Access/domain reads unavailable, physical-device/live CloudKit verification unqualified, and validation receipt reconstructed from the official log without rerun.\n",
+  "evidence_recording": "Saved from the completed review tool response; this recording did not rerun the review."
+}

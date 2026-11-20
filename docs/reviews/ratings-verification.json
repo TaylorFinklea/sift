@@ -1,0 +1,132 @@
+{
+  "scope": "Local numeric card facts and rating rounds in web and native app; no release or provider changes",
+  "checks": {
+    "web_tests": "110/110",
+    "web_build": "passed; Sites prepared",
+    "native_core": "31/31 in 3 suites",
+    "native_hosted_persistence": "3/3",
+    "native_latest_v2_remap": "1/1",
+    "native_existing_v1_remap": "1/1",
+    "native_ui": "1/1; 69.701 seconds actual case",
+    "cross_runtime_remap": "7/7 record envelopes and Base64 payloads identical"
+  },
+  "web_preview": {
+    "url": "http://127.0.0.1:3994/",
+    "database": "/private/tmp/sift-ratings-preview/ratings.sqlite",
+    "bundle": "index-DjWm_VH6.js",
+    "viewports": [
+      "375x667",
+      "390x844",
+      "1280x800"
+    ],
+    "console_warnings_errors": [],
+    "old_preview_preserved": "http://127.0.0.1:3993/",
+    "current_recheck": "2026-11-09: restarted existing synthetic database; HTTP HTML/assets/health verified. Fresh CUA unavailable (native pipe missing); prior visual evidence retained."
+  },
+  "independent_sol": "Current source, exact fixtures, logs and native source manifest independently verified; no material code issues remain",
+  "ollama": {
+    "complete": true,
+    "model": "deepseek-v4.1-flash:cloud",
+    "done_reason": "stop",
+    "packet_sha256": "9b1cb788398da519e2eadf266613d01a8b18b58f9495ac89b9e0e47463e088e8",
+    "packet_bytes": 425872,
+    "source_files": 41,
+    "owner_authorized_retry": true,
+    "status": "complete; no confirmed material findings",
+    "independent_fact_check": "Sol confirmed each retraction and all 41 source hashes",
+    "authorization": "Owner: you do not have to ask for narrow approvals; Ollama can get 100% of the context just like you"
+  },
+  "limits": [
+    "Native portrait iPhone17e Simulator flow only; no fresh landscape/accessibility-size/other-device qualification",
+    "One unattributed SwiftUI Invalid frame dimension (negative or non-finite) warning during keyboard appearance at UI log line264; no assertion/visible layout failure",
+    "Physical-device and live CloudKit sync not verified; no deployment, D1 production migration, TestFlight upload or Git push"
+  ],
+  "artifacts": {
+    "web_all_tests": {
+      "path": "/private/tmp/sift-ratings-web-all-tests.log",
+      "bytes": 10607,
+      "sha256": "e8a1c0f77bfedca619492cd744777a0a94efd364a54bc8ba688ad7caa2f3c26c"
+    },
+    "native_core": {
+      "path": "/private/tmp/sift-ratings-native-core-final.log",
+      "bytes": 6121,
+      "sha256": "ede6748b3f460e98791d2d0a2362fbfd8460951f170c543728d7d6c6bbdbdfe7"
+    },
+    "native_unused_card": {
+      "path": "/private/tmp/sift-ratings-unused-card-native-validation.log",
+      "bytes": 856,
+      "sha256": "35146dad7405a11695a7e8eb6667d572e13ecdde84f37f49f49b0a8d1c9a406e"
+    },
+    "native_legacy_upgrade": {
+      "path": "/private/tmp/sift-ratings-legacy-native-validation.log",
+      "bytes": 1050,
+      "sha256": "5136d090573b3fa10e08c006941dc54578bdfe148a304c473b185a010670e3f0"
+    },
+    "browser_archive": {
+      "path": "/private/tmp/sift-ratings-browser-flow.sift.json",
+      "bytes": 20192,
+      "sha256": "fc10616385d0d63e57a1c02f7117e3f3c98ec8d0346d30b1c6147190fe094985"
+    },
+    "remap_input": {
+      "path": "/private/tmp/sift-ratings-remap-input.sift.json",
+      "bytes": 7625,
+      "sha256": "6dbc10c7f19ecf345fc0ab362d1ad6461b1e26835c572572cba85b75813e9f21"
+    },
+    "remap_native": {
+      "path": "/private/tmp/sift-ratings-remap-native.sift.json",
+      "bytes": 6953,
+      "sha256": "82266c38a2f54b7ee4a177295b6a6e4f2ab2cd0e1c02982a3d170c53e8a374fd"
+    },
+    "web_phone": {
+      "path": "/private/tmp/sift-ratings-mobile.png",
+      "bytes": 28818,
+      "sha256": "9a96c513a423ad7f8e9c48537745623fec6ef7763ba15392b8e167da193be435"
+    },
+    "web_small_phone": {
+      "path": "/private/tmp/sift-ratings-small-phone.png",
+      "bytes": 23538,
+      "sha256": "40a101fb1d5f525f30c5aae2e5f0ba10aad72a032af894ad43a502f43443c193"
+    },
+    "web_desktop": {
+      "path": "/private/tmp/sift-ratings-desktop.png",
+      "bytes": 50025,
+      "sha256": "7e20cf2d9c27a3b3d9a3019c5e35be796469f5d598a4be58f3a184667e006aa3"
+    },
+    "native_screenshot": {
+      "path": "/private/tmp/sift-ratings-native.png",
+      "bytes": 281719,
+      "sha256": "4d063ecfe59ee3147636010aa630145fdaa13d45dbf18dd6a26fdeaffb79c5d7"
+    },
+    "native_hosted_three": {
+      "path": "~/Library/Developer/XcodeBuildMCP/workspaces/codex-75d8bc24bf85/logs/test_sim_2026-11-08T02-47-29-882Z_pid56001_6ecbf499.log",
+      "bytes": 38785,
+      "sha256": "01c1c7af1f47360a916b722abcaf46c0823ea39dabafda6bbcba5a0d56653516"
+    },
+    "native_ui": {
+      "path": "~/Library/Developer/XcodeBuildMCP/workspaces/codex-75d8bc24bf85/logs/test_sim_2026-11-08T02-57-07-131Z_pid56001_9ea1235e.log",
+      "bytes": 74029,
+      "sha256": "22beaeb727228c584a7e5ada2f168c1c76cfa2c7a9a175d58d3591991b893e32"
+    },
+    "native_v1_remap": {
+      "path": "~/Library/Developer/XcodeBuildMCP/workspaces/codex-75d8bc24bf85/logs/test_sim_2026-11-08T03-00-25-215Z_pid56001_8d69c4b7.log",
+      "bytes": 39999,
+      "sha256": "5680f9b6b954f300f10aa497c6a6f122fd9a7e88ceec4231825a6df7184551cf"
+    }
+  },
+  "narrow_review_packet": {
+    "path": "/private/tmp/sift-ratings-narrow-review-packet.txt",
+    "bytes": 51472,
+    "sha256": "2c8fbe9c12fae08666c5a378466aaab4e7f0248258ce0c9f97a1c1ce064be2be",
+    "source_files": 8,
+    "dispatched": false,
+    "authorized": false,
+    "status": "Superseded without dispatch by full 41-file review; no narrow approval needed"
+  },
+  "ollama_initial_attempt": {
+    "status": "incomplete; no approval",
+    "model": "deepseek-v4.1-flash:cloud",
+    "done_reason": "length",
+    "packet_sha256": "61544214dbed6c54a92c528649a06625e1072bf79e1c0a3cd1a4f344dfaa238b",
+    "retry": "Initially unauthorized; superseded by owner-authorized completed full-context retry recorded above"
+  }
+}

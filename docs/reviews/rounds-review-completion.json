@@ -1,0 +1,38 @@
+{
+  "selector": "glm-5.3-flash:cloud",
+  "complete": true,
+  "done_reason": "stop",
+  "content_chars": 20250,
+  "elapsed_seconds": 42.3,
+  "packet_chars": 450680,
+  "packet_sha256": "12b3aedc2078e5180efa3bf0ee71a259fbb557c1b12d7d9a0746202d48b593ca",
+  "sources": {
+    "Dockerfile": "be96d057767c8540f1e6ff1ab000598bd03df2b9357847818bde4f22017365d8",
+    "cloudflare/index.js": "b332d52509aa500aaa86dda01767d0cf3d3aa467ca3d02981d653784b9be422a",
+    "cloudflare/migrations/0003_sort_sessions.sql": "ee856303fcdc1c85de37bdbf1245f95638860a88dfcc548bd520006912090e20",
+    "scripts/dev-worker-preview.mjs": "60e5600fdefc61ed026cb46eedbfcfbf72cfbd062f9cb8bb339c1e4f8e865385",
+    "server/index.js": "871471b9b40c9adf7ac516f5b3e35766f36ad3a014b9457b2b5a9fec8f699d19",
+    "shared/sort-plan.js": "4efdfd5bdf32b0240326a4d23dfabf53128f4fb09ca28524e927022655fa2efb",
+    "src/App.jsx": "d48473cc9aaa2082c07b1c64d73b09e8d0f23f248968ea9b291695240f1cc452",
+    "src/SwipeCard.jsx": "6689dd729f2057a3f0a36ae1c65f3d7302c11e9e97bd0d2ef1b3dbf10207d941",
+    "src/api.js": "8c0512097d273bc489d9e72a2724589d74047d1c20fc7cf9da1bd261f80b1ee8",
+    "src/sort-gesture.js": "3acb6a6b33a0df734778a9104f32da9ffe34745f03525d7ea8af709a092cd156",
+    "src/sort-session.js": "2f213281e0ffc4454cc570aa15d81e91366f5927b98cbdc55ac7ed9f43bfaf8e",
+    "src/styles.css": "79c28790e22f41c6dc19cb256c8bc898c380f618beb45ed9cf3c96efe538e79d",
+    "src/swipe-card.css": "84f0301cfae4dd30d9026a061d897fdccfbeccf87c4b90cadf2079618639f3f3",
+    "tests/cloudflare.test.js": "2a46f422a05b9c10806f1c8558dfef2690c92de92c9645d6cfaeec6943f9cc0d",
+    "tests/server.test.js": "bb7e07dc407b2f416f0591c949dbf0d1a577a2a4d8a8c14488a60e9981e9121c",
+    "tests/sort-gesture.test.mjs": "517849221b22a706cbc99e2d5c0af1e259763b06823b2aa8e84ed1d2f77edead",
+    "tests/sort-session.test.mjs": "4d1981b9f93b92401c4f42d9da4a4f2793c7dc316842032669f68f66e12bd2d4"
+  },
+  "continuation": true,
+  "response_sha256": "e21ebb9b5234cf387cdb26cb502d33f2c6b74f7d165f5bd3635badd21d3311ac",
+  "scope": "R1/R2/R3 local implementation against 790acf8; no deployment",
+  "final_tests": "66/66; build and Sites packaging passed",
+  "native_review": "Independent read-only Sol ready after verified repairs",
+  "limitations": [
+    "No live D1 migration/deployment",
+    "No physical iOS Safari or home-screen installation acceptance",
+    "No production Free-plan CPU capacity claim"
+  ]
+}

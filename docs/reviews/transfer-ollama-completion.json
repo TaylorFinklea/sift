@@ -1,0 +1,14 @@
+{
+  "model": "deepseek-v4.1-flash",
+  "created_at": "2026-11-07T01:00:41.779565332Z",
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 8251998210,
+  "prompt_eval_count": 54731,
+  "eval_count": 1706,
+  "packet_manifest": "transfer-source-manifest.json",
+  "complete": true,
+  "packet_sha256": "d7ae4c417d7824c25b6d9a8de63fffdc381b19180e4a7d2bd6e6936b6d988207",
+  "raw_report": "transfer-ollama-report.md",
+  "adjudication": "transfer.md"
+}

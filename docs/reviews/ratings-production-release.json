@@ -1,0 +1,187 @@
+{
+  "kind": "sift-ratings-production-release",
+  "source_commit": "c064394ce2d60ff72606e394b472ae44fac54adf",
+  "source_short": "c064394",
+  "target": {
+    "account_id": "<redacted-account-id>",
+    "worker": "sift",
+    "d1_id": "<redacted-d1-id>",
+    "d1_binding": "DB",
+    "domains": [
+      "sift.example.com",
+      "api.sift.example.com"
+    ],
+    "workers_dev": false,
+    "preview_urls": false
+  },
+  "config": {
+    "path": ".local/cloudflare-production/wrangler.jsonc",
+    "mode": "0600",
+    "sha256": "c907feb9ca19bb773ed400e5b8c90e1b09c45c35f119d1934af1a486ad1baf61",
+    "wrangler_account_readback": "OAuth active, expected account id; missing unrelated k2/agent-memory/challenge-widget scopes only"
+  },
+  "migration": {
+    "applied_only": "0005_ratings.sql",
+    "sha256": "183db2ff6f5eada32a27e6ddb5c5613484eeb6c223e7a09338e27d930737c199",
+    "exit_code": 0,
+    "recorded_in_ledger": true,
+    "foreign_key_violations": 0,
+    "legacy_decision_rows": 58,
+    "sort_answers_rows": 58,
+    "missing_legacy_ids": 0,
+    "same_id_field_mismatches": 0,
+    "legacy_rating_values_null": true
+  },
+  "deployment": {
+    "exit_code": 0,
+    "deployment_id": "4b24de63-67d5-4a3f-af55-0785fccb49de",
+    "version_id": "9dddd277-df60-4b19-8fc6-5c1e6ba6c1ca",
+    "created_on": "2026-11-09T15:57:07.150418Z",
+    "traffic_percent": 100,
+    "code_rollback_target_version_id": "fd7bae7e-2ffb-4277-b314-ae08c8e600e6"
+  },
+  "previous_active_version_id": "fd7bae7e-2ffb-4277-b314-ae08c8e600e6",
+  "domains": [
+    {
+      "hostname": "sift.example.com",
+      "anonymous_status": 302
+    },
+    {
+      "hostname": "api.sift.example.com",
+      "anonymous_status": 401
+    }
+  ],
+  "asset_anonymous_status": 302,
+  "api_health_anonymous_status": 401,
+  "access_settings": {
+    "changed": false,
+    "direct_app_policy_subdomain_readback": "unavailable: current Wrangler OAuth profile lacks Access read scope",
+    "anonymous_edge_behavior": "main and asset redirect302; API returns401"
+  },
+  "exposure_flags": {
+    "workers_dev_enabled": false,
+    "preview_urls_enabled": false,
+    "prior_values_retained": true
+  },
+  "preserved_preexisting_table_fingerprints": {
+    "collections": {
+      "count": 1,
+      "sha256": "96393e454b3926fb5684ddb87f04750cde31926dea08f4a006b14ad0e52668b0",
+      "baseline_count": 1,
+      "baseline_sha256": "96393e454b3926fb5684ddb87f04750cde31926dea08f4a006b14ad0e52668b0",
+      "unchanged": true
+    },
+    "runs": {
+      "count": 2,
+      "sha256": "28d59e71de90d59ec5f4e7e1e700d1fc7fdf1721299d502e85b3de256486915f",
+      "baseline_count": 2,
+      "baseline_sha256": "28d59e71de90d59ec5f4e7e1e700d1fc7fdf1721299d502e85b3de256486915f",
+      "unchanged": true
+    },
+    "decisions": {
+      "count": 58,
+      "sha256": "6b91be9e1c4ee8c37f5e0837ecf550c42e263cebd706a1eabf6250a5d5390cba",
+      "baseline_count": 58,
+      "baseline_sha256": "6b91be9e1c4ee8c37f5e0837ecf550c42e263cebd706a1eabf6250a5d5390cba",
+      "unchanged": true
+    },
+    "sort_sessions": {
+      "count": 2,
+      "sha256": "027ac55b6156fa2b0b0ca9c4589abc07c11232893bfbb70fe8efb9607a8f33f7",
+      "baseline_count": 2,
+      "baseline_sha256": "027ac55b6156fa2b0b0ca9c4589abc07c11232893bfbb70fe8efb9607a8f33f7",
+      "unchanged": true
+    },
+    "api_keys": {
+      "count": 3,
+      "sha256": "e4047f8f6a3d69978d7f8d74e1c18147db7fc4c52ed5bfe56a14d3245a8e0e5f",
+      "baseline_count": 3,
+      "baseline_sha256": "e4047f8f6a3d69978d7f8d74e1c18147db7fc4c52ed5bfe56a14d3245a8e0e5f",
+      "unchanged": true
+    },
+    "transfer_records": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "baseline_count": 0,
+      "baseline_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    "transfer_collection_versions": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "baseline_count": 0,
+      "baseline_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    },
+    "transfer_receipts": {
+      "count": 0,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "baseline_count": 0,
+      "baseline_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "unchanged": true
+    }
+  },
+  "legacy_decision_reconciliation": {
+    "legacy_decision_rows": 58,
+    "sort_answers": 58,
+    "missing_legacy_ids": 0,
+    "same_id_field_mismatches": 0,
+    "foreign_key_violations": 0
+  },
+  "checks": {
+    "npm_run_build": "passed;4590modules",
+    "npm_run_test_sites": "passed4/4",
+    "wrangler_dry_run": "normal completion;27 assets;174.83KiB /40.47KiB gzip",
+    "plan_review": "Sol approved exact frozen plan; independent full-context Ollama release review completed no material findings",
+    "provider_live_status": "deployment version at100%; migration ledger0001-0005",
+    "post_release_independent_sol": "Completed; independently verified private backup/export row invariants, audit, FK, ledger, saved provider100% state and final documentation; no material findings"
+  },
+  "artifacts": {
+    "approved_plan": {
+      "path": ".local/cloudflare-production/ratings-release-plan-20261109.json",
+      "mode": "0600",
+      "sha256": "fb185c5c074e7a033b18fa037ba497a0ed72fd916953e20df9633e3dcd5544d6"
+    },
+    "pre_migration_backup": {
+      "path": ".local/cloudflare-production/pre-0005-20261109.sql",
+      "mode": "0600",
+      "bytes": 29848,
+      "sha256": "62808bdaa2475261b0b3b6c504b83a9008fe8a1b6da0ba47991bd3cf6061bfee"
+    },
+    "post_migration_backup": {
+      "path": ".local/cloudflare-production/post-0005-c064394-20261109.sql",
+      "mode": "0600",
+      "bytes": 49624,
+      "sha256": "967c04452eaa53ff4d725048528cb8349d0f289c9915351db9ea5292f007126c"
+    },
+    "migration_log": {
+      "path": ".local/cloudflare-production/migration-0005-20261109.log",
+      "mode": "0600",
+      "exit_code": 0,
+      "sha256": "4da6cfdc3b7b4eb58233fb04203638466022d5dea52874d87ca1472186c392c6"
+    },
+    "deployment_log": {
+      "path": ".local/cloudflare-production/deploy-c064394-20261109.log",
+      "mode": "0600",
+      "exit_code": 0,
+      "sha256": "6f57c7600df41dc2c047a788630a32a66d671b03c6c071c748411e040ad4b73d"
+    },
+    "post_export_log": {
+      "path": ".local/cloudflare-production/post-export-0005-20261109.log",
+      "mode": "0600",
+      "sha256": "ef9b56244a1cb20f10c173725b9cd2ae4a73ac00f0912f2cb4cc8091ddd3337f"
+    },
+    "post_deploy_provider_status": {
+      "path": ".local/cloudflare-production/post-deploy-provider-status-20261109.json",
+      "mode": "0600",
+      "sha256": "43ce79a594a7a13ea428950f34d5779076386b4b13c16a5ba381af14f7cdd603"
+    }
+  },
+  "limitations": [
+    "No authenticated owner browser session or rendered remote UI QA; local UI and web/Sites checks passed before release.",
+    "Direct Access application/policy configuration readback was unavailable through current OAuth scopes; observed HTTP access behavior passed.",
+    "No production card/key fixture writes, no new API key, no DNS, Access, billing or SQLite changes.",
+    "No Git push or public distribution."
+  ],
+  "rollback": "The previous Worker version is a code containment target only. Retain migration0005 and all data. Older code reads/writes decisions while new code uses sort_answers; if rollback serves writes, reconcile those audit rows before re-upgrade. Never restore the pre-release SQL over live data or drop columns/tables."
+}

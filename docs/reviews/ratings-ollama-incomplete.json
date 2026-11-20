@@ -1,0 +1,8 @@
+{
+  "complete": false,
+  "model": "deepseek-v4.1-flash:cloud",
+  "done_reason": "length",
+  "packet_sha256": "61544214dbed6c54a92c528649a06625e1072bf79e1c0a3cd1a4f344dfaa238b",
+  "packet_bytes": 236188,
+  "files": 18
+}
