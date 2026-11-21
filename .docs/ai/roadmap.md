@@ -4,7 +4,7 @@ This file records product direction and milestones. Use project-local Beads for 
 
 ## Follow-ups, not yet authorized
 
-- **Public release of the repository.** The working tree is scrubbed; the history still carries the owner's Gmail as commit author plus older identifiers. The owner chose a fresh single-commit history, built in `~/git/sift-public`. Next: owner approves creating the GitHub repository from it, setting its description and topics, and pushing, then confirms CI is green. Each step needs owner approval.
+- **Public release of the repository.** The working tree is scrubbed; the history still carries the owner's Gmail as commit author plus older identifiers. Done 2026-11-21: published as https://github.com/TaylorFinklea/sift from a fresh single-commit history, CI green. Open: how later changes reach the public repo (each sync is a separate, owner-approved push). Each step needs owner approval.
 - **Alerting.** No uptime check or alerts exist; add them before anyone else relies on the hosted copy.
 - **Public read-only demo.** Visitors cannot use the Access-protected live site. A demo mode with sample data would need its own security review.
 - **Single API implementation.** `server/index.js` and `cloudflare/index.js` duplicate the API; consider one shared request core with two storage adapters.
