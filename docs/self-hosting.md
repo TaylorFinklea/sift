@@ -5,7 +5,7 @@ Sift has two production runtimes that share one API and front end:
 - **Container:** Node.js 24+ with a built-in SQLite database. No external database service.
 - **Cloudflare:** a Worker with D1, Cloudflare Access for the app and hashed bearer keys for the API.
 
-For local development, see the [README](../README.md#run-it-locally).
+For local development, see the [README](../README.md#run-it-yourself).
 
 ## Production build on your machine
 
