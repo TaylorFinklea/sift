@@ -2,7 +2,15 @@
 
 Initial launch completed on 2026-11-01 under the approved `cloudflare-launch.md` plan. Initial runtime/frontend source was `f0825fc`; that launch changed no application code. Existing Workers Free billing and local SQLite were preserved.
 
-## Current release — 2026-11-09 (collection actions and responsive round forms)
+## Current release — 2026-11-26 (configured hostnames, refreshed UI)
+
+Owner-authorized source `c037e0d` (the same code as public commit `aabbe5d`) is deployed at https://sift.example.com and https://api.sift.example.com. Deployment `f5bf8f07-2be0-4ef9-98fb-292e8ebb935e` serves Worker version `d35c5743-1759-49c9-8e23-2b0471dbe767` at 100% (2026-11-26T20:32:42Z). It ships everything since the previous release: hostnames read from `SIFT_APP_HOST` and `SIFT_API_HOST` (the Worker fails closed without them), the refreshed web UI and front-end restructure, and Worker support for the public privacy and support pages. Access still protects the whole app hostname, so those pages stay behind sign-in until Access is changed. No migration ran.
+
+Before the deploy, the build, tests (118/118), the Sites check (4/4) and a Wrangler dry run against the production config passed. The production config now carries both host settings, so its SHA-256 changed to `06a7bfc7be1a94397d838772917e3d9c5b64511f28c265cb76ee89f0d9fb4e0e`. A fresh D1 export was taken first. After the deploy, all nine table counts and full-row fingerprints match the pre-release snapshot, the migration ledger is 0001–0005 with nothing pending, and the foreign-key check is clean. Anonymous requests to the app, the new `/assets/index-Byp9Di9x.js` bundle, `/privacy` and `/support` redirect to Access (302). The API returns `401 api_key_invalid` without a key or with an invalid one, which also shows the Worker matched the configured API hostname rather than failing closed with `503`. An owner sign-in check of the new bundle was not run. No DNS, Access, billing or API key changes.
+
+Rollback is code-only to version `d9887b38-1368-420e-9657-6c3b4c93cee2`, keeping all D1 data. The raw export, fingerprints, deploy log and receipt are in the ignored `.local/cloudflare-production/`, mode 0600.
+
+## Previous release — 2026-11-09 (collection actions and responsive round forms)
 
 Owner-authorized UX source `b68635d` is deployed at https://sift.example.com and https://api.sift.example.com. Deployment `22ad010c-fd94-4ff5-bee0-9cd162695b52` serves Worker `d9887b38-1368-420e-9657-6c3b4c93cee2` at100% (2026-11-09T22:09:16Z). Primary Start/Resume is trailing, Edit/Export and library transfer actions are compact accessible icons, and round/rating forms resize without overlap. No migration or content write occurred.
 
